@@ -1,0 +1,35 @@
+.header-link {
+  color: var(--color-brand-dark);
+  transition: color 0.2s;
+}
+.header-link:hover {
+  color: var(--color-brand-light);
+}
+
+.header-social-icon {
+  fill: var(--color-brand-dark);
+  transition: fill 0.2s;
+}
+
+.header-social-icon:hover {
+  fill: var(--color-white);
+}
+
+.address-link {
+  font-size: 16px;
+  color: var(--color-white);
+  transition: color 0.2s;
+}
+
+.address-link:hover {
+  color: var(--color-brand-light);
+}
+
+.address-icon {
+  fill: var(--color-white);
+  transition: fill 0.2s;
+}
+
+.address-icon:hover {
+  fill: var(--color-brand-light);
+}
