@@ -56,19 +56,8 @@
   color: var(--color-white);
   cursor: pointer;
   transition: background-color 0.2s;
-}
 
-.form-btn:hover {
-  background-color: transparent;
-}
-
-.modal-btn-close {
-  position: absolute;
-  top: 42px;
-  right: 42px;
-  stroke: var(--color-white);
-  fill: rgba(0, 0, 0, 0);
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+  &:hover {
+    background-color: transparent;
+  }
 }

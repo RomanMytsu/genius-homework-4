@@ -1,0 +1,76 @@
+.about-us {
+  &__container {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 1.7;
+  }
+
+  &__img {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+  }
+
+  &__photo {
+    border-radius: 50%;
+    box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.2);
+  }
+
+  &__middle-star {
+    position: absolute;
+    top: 33px;
+    right: -20px;
+    fill: var(--color-brand-light);
+    rotate: -30deg;
+    animation-name: stars-spin;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+
+  &__small-star {
+    position: absolute;
+    top: 270px;
+    right: 14px;
+    fill: var(--color-grey);
+    rotate: 23deg;
+    animation-name: stars-spin;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+
+  &__big-star {
+    position: absolute;
+    top: 356px;
+    left: 121px;
+    fill: var(--color-brand-dark);
+    animation-name: stars-spin;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+
+  &__second-photo {
+    margin-left: 172px;
+  }
+}
+
+@keyframes stars-spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
