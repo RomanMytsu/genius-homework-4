@@ -9,10 +9,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  background: url(../img/advantages-background.png) no-repeat;
-  background-position: 51% 64%;
-  background-size: inherit;
-  background-attachment: local;
+  background-color: var(----color-white);
   margin: 0;
 }
 
@@ -25,6 +22,14 @@ h5,
 h6 {
   margin-top: 0;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 ul {
   margin: 0;
   padding: 0;

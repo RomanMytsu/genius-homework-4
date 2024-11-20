@@ -1,27 +1,66 @@
 .about-us {
+  padding: 40px;
+
   &__container {
-    display: flex;
-    gap: 32px;
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      gap: 32px;
+    }
   }
 
   &__info {
     display: flex;
     flex-direction: column;
-    max-width: 700px;
-    gap: 40px;
-    margin-top: 40px;
+    max-width: 710px;
+    gap: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 40px;
+      margin-top: 40px;
+    }
+  }
+
+  &__title {
+    font-family: "Play", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--color-brand-dark);
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-weight: 700;
+      font-size: 64px;
+      margin-bottom: 40px;
+    }
   }
 
   &__text {
-    font-size: 22px;
-    line-height: 1.7;
+    font-size: 18px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+      line-height: 1.7;
+    }
+  }
+
+  &__star {
+    position: absolute;
+    right: 22px;
+    bottom: -332px;
+    fill: var(--color-brand-dark);
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 
   &__img {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    position: relative;
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      position: relative;
+    }
   }
 
   &__photo {

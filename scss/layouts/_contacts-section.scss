@@ -4,12 +4,31 @@
   &__container {
     display: flex;
     justify-content: center;
-    gap: 32px;
+    flex-direction: column-reverse;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 32px;
+    }
   }
 
   &__map {
     flex-shrink: 0;
-    border-radius: 32px;
+    height: 232px;
+    margin: 0 -24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0 auto;
+      width: 320px;
+      height: 500px;
+      border-radius: 32px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 605px;
+      height: 480px;
+    }
   }
 
   &__form {
